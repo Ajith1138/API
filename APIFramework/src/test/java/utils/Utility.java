@@ -23,7 +23,8 @@ public class Utility {
 				setContentType(ContentType.JSON).
 				addFilter(RequestLoggingFilter.logRequestTo(printStream))
 				.addFilter(ResponseLoggingFilter.logResponseTo(printStream))
-				.addQueryParam("key", "qaclick123").build();
+				.addQueryParam("key", "qaclick123")
+				.build();
 		return req;
 		}
 		return req;
